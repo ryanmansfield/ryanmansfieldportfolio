@@ -1,16 +1,161 @@
-<div align="center">
-  <h3>Send A message to Us</h3>
+ <div>
+      <!-- Banner Section -->
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2978&q=80);">
+        <div class="nav-links">
+          <a class="nav-link" href="#bio">About</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </div>
+        <div class="container">
+          <h1>Ryan Mansfield</h1>
+          <p>Full Stack Web Developer</p>
+          <form action="mailto:ryanmansfield86@gmail.com" method="GET" target="_blank">
+            <input type="submit" value="Email Me" class="btn btn-flat">
+          </form>
+        </div>
+      </div>
 
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+
+      <!-- Bio Section -->
+
+      <div class="bio" id="bio" >
+        <div class="row">
+          <div class="col-sm">
+            <h2>Hello! My name is Ryan Mansfield,  I was born and raised in Chicago and educated in Los Angeles.  I found myself becoming bored with my daily routine and dreaming of a different life.  I decided enough was enough and it was time to make some changes.  So I sold almost everything I owned and moved to China to teach English.  While there I discovered my true passion for travel, adventure, and a remote lifestyle.  After my time in Asia, I ended up in Brazil, where I attended a coding boot camp and became a full-stack web developer.  I now create web sites and web applications bringing your ideas to life.  I am available for full-time hire, contract jobs, and freelance projects.</h2>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="Stack col-9">
+          <h3>My Technical Skills</h3>
+            <i class="devicon-rails-plain-wordmark"></i>
+            <i class="devicon-postgresql-plain-wordmark"></i>
+            <i class="devicon-ruby-plain-wordmark"></i>
+            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-css3-plain-wordmark"></i>
+            <i class="devicon-html5-plain-wordmark"></i>
+            <i class="devicon-react-original-wordmark"></i>
+            <i class="devicon-git-plain-wordmark"></i>
+            <i class="devicon-jquery-plain-wordmark"></i>
+            <i class="devicon-webpack-plain-wordmark"></i>
+            <i class="devicon-github-plain-wordmark colored" style="color: #2E6171"></i>
+            <i class="devicon-slack-plain-wordmark"></i>
+            <i class="devicon-heroku-original-wordmark"></i>
+            <i class="devicon-bootstrap-plain-wordmark"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Section -->
+      <div class="portfolio">
+        <div class="row">
+          <div class="col-sm">
+            <h3 id="portfolio">Past projects</h3>
+            <div class="cards">
+                <div class="card">
+                  <a href="www.night-roulette.com" target="_blank">
+                    <%= image_tag("night-roulette.png", :alt => "night roulette") %>
+                  </a>
+                  <div class="card-infos">
+                    <div>
+                      <h2>Night Roulette</h2>
+                      <p>Rails Application built using JavaScript, HTML, CSS</p>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="card">
+                <a href="http://fauxtography.herokuapp.com" target="_blank">
+                  <%= image_tag("fauxtography.png", :alt => "fauxtography") %>
+                </a>
+                <div class="card-infos">
+                  <div>
+                    <h2>Fauxtography</h2>
+                    <p>Rails Application built using JavaScript, HTML, CSS</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <a href="https://mister-ryan-cocktail.herokuapp.com/cocktails" target="_blank">
+                  <%= image_tag("mr-cocktail.png", :alt => "mr-cocktail") %>
+                </a>
+                <div class="card-infos">
+                  <div>
+                    <h2>Mister Cocktail</h2>
+                    <p>Rails Application built using JavaScript, HTML, CSS</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <a href="#">
+                  <%= image_tag("giphy-react.png", :alt => "giphy-react") %>
+                </a>
+                <div class="card-infos">
+                  <div>
+                    <h2>Giphy Search</h2>
+                    <p>React Application</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <a href="https://tsunami-music.herokuapp.com/">
+                  <%= image_tag("tsunami.png", :alt => "tsunami") %>
+                </a>
+                <div class="card-infos">
+                  <div>
+                    <h2>Tsunami</h2>
+                    <p>Website built using Rails</p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+
+      <div class="container">
+      <div align="center">
+        <h3>Send me a message</h3>
+
+        <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+          <%= f.input :name, :required => true %>
+          <%= f.input :email, :required => true %>
+          <%= f.input :message, :as => :text, :required => true %>
+          <div class= "hidden">
+            <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+          </div>
+          <div>
+            </br>
+            <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+          </div>
+        <% end %>
+      </div>
     </div>
-    <div>
-      </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+
+      <!-- Footer Section -->
+      <div class="footer">
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/ryan-mansfield-a4753b18/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/ryanmansfield" target="_blank">
+            <i class="fab fa-github-square"></i>
+          </a>
+          <a href="https://facebook.com/Mansfield.Ryan" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+
+        </div>
+        <div class="footer-copyright">
+          This page is made with <i class="fas fa-heart"></i>
+        </div>
+      </div>
     </div>
-  <% end %>
-</div>
+
+
+
