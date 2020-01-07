@@ -1,6 +1,7 @@
 /*Banner*/
 .banner {
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   height: 100vh;
 }
@@ -38,3 +39,4 @@
   justify-content: flex-end;
   font-size: 24px;
 }
+
