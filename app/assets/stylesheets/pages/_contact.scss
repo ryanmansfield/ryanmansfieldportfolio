@@ -14,23 +14,16 @@ h4 {
   text-align: center;
 }
 
-
-
-
 /*Bio Section*/
 .bio {
   background-color: #09090B;
   color: white;
+  padding: 24px;
 }
 
-.bio h3 {
-  margin: 24px;
+.bio p {
   text-align: center;
   column-count: 3;
-}
-
-.bio h4 {
-  margin-bottom: 16px;
 }
 
 .bio i {
@@ -39,13 +32,18 @@ h4 {
   padding: 16px;
 }
 
-.bio p {
-  color: white;
+.bio h6 {
+  text-align: center;
 }
 
-.skills {
+.skills-list {
   display: flex;
+  flex-wrap: wrap;
+  list-style: none;
   justify-content: center;
+  li {
+    margin: 8px;
+  }
 }
 
 
@@ -54,11 +52,13 @@ h4 {
 .portfolio {
   background-color: #09090B;
   color: white;
+  padding: 24px;
 }
 
 #portfolio {
   margin-top: 24px;
   margin-bottom: 0px;
+  text-align: center;
 }
 
 /*Card*/
