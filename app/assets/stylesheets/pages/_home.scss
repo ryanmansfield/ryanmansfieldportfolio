@@ -1,1 +1,57 @@
 // Specific CSS for your home-page
+
+h4 {
+  text-align: center;
+}
+
+/*Bio Section*/
+.bio {
+  background-color: #09090B;
+  color: white;
+  padding: 24px;
+}
+
+.bio p {
+  text-align: center;
+  column-count: 3;
+}
+
+.bio i {
+  color: #2E6171;
+  font-size: 100px;
+  padding: 16px;
+}
+
+.bio h2 {
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  li {
+    margin: 8px;
+  }
+}
+
+
+/*Portfolio*/
+
+.portfolio {
+  background-color: #09090B;
+  color: white;
+  padding: 24px;
+}
+
+#portfolio {
+  margin-top: 24px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+
+/*Card*/
+
+

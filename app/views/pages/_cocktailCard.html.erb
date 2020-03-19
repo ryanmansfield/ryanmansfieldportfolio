@@ -1,14 +1,13 @@
-    <div class="card">
-      <a href="https://mister-ryan-cocktail.herokuapp.com/cocktails" target="_blank">
-        <%= image_tag("mr-cocktail.png", :alt => "mr-cocktail") %>
-      </a>
-      <div class="card-infos">
-        <div>
-          <h2>Cocktail Recipe Book</h2>
-              <button type="button" class="create-btn" data-toggle="modal"  data-target="#cocktail-modal">
-                <i class="fas fa-plus-circle"></i>
-              </button>
-          <p>Rails APP using CRUD and 3rd party APIs to update Cocktail Recipe</p>
-        </div>
-      </div>
+<div class="card">
+   <%= image_tag("mr-cocktail.png", :alt => "mr-cocktail") %>
+  <div class="card-info">
+    <h2>Cocktail Recipe Book</h2>
+    <p>Rails APP using CRUD and 3rd party APIs to update Cocktail Recipe</p>
+    <div class="card-action">
+     <button type="button" class="btn btn-flat" data-toggle="modal"  data-target="#cocktail-modal">
+        View More
+      </button>
+      <a href="https://mister-ryan-cocktail.herokuapp.com/cocktails" target="_blank" class="btn btn-flat" class="btn btn-flat">Visit Website </a>
     </div>
+  </div>
+</div>
