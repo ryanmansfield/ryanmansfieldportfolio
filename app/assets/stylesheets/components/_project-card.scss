@@ -1,11 +1,6 @@
-// .cards {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-gap: 16px;
-//   padding: 16px;
-// }
 .card {
   margin: 16px;
+  height: 400px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
@@ -20,25 +15,32 @@
   object-fit: cover;
 }
 
-.card h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+.card-info {
+  padding: 16px;
+  // position: relative;
+
 }
 
-.card p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
+.card-action {
+  display: flex;
+  justify-content: space-around;
+
 }
+
+// .card h2 {
+//   font-size: 16px;
+//   font-weight: bold;
+//   margin: 0;
+// }
+
+// .card p {
+//   font-size: 12px;
+//   opacity: .7;
+//   margin: 0;
+// }
 
 
 .card .card-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
 }
 
 // // Smallest device
