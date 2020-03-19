@@ -48,110 +48,24 @@
 <div class="portfolio">
   <h2 id="portfolio">Past projects</h2>
   <div class="cards">
-    <div class="card">
-      <a href="https://www.night-roulette.com" target="_blank">
-        <%= image_tag("night-roulette.png", :alt => "night-roulette") %>
-      </a>
-      <div class="card-infos">
-        <div>
-          <h2>Night Roulette</h2>
-             <button type="button" class="create-btn" data-toggle="modal"  data-target="#night-roulette-modal">
-                <i class="fas fa-plus-circle"></i>
-              </button>
-          <p>Rails App designed and developed in a team and pushed to production using JavaScript, HTML, CSS</p>
-        </div>
-      </div>
-    </div>
+    <%= render 'nightRouletteCard' %>
 
-    <div class="card">
-      <a href="http://fauxtography.herokuapp.com" target="_blank">
-        <%= image_tag("fauxtography.png", :alt => "fauxtography") %>
-      </a>
-      <div class="card-infos">
-        <div>
-          <h2>Fauxtography Marketplace</h2>
-              <button type="button" class="create-btn" data-toggle="modal"  data-target="#fauxtography-modal">
-                <i class="fas fa-plus-circle"></i>
-              </button>
-          <p>Rails APP built in a team during 1 week sprint using JavaScript, HTML, CSS</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="card">
-      <a href="https://mister-ryan-cocktail.herokuapp.com/cocktails" target="_blank">
-        <%= image_tag("mr-cocktail.png", :alt => "mr-cocktail") %>
-      </a>
-      <div class="card-infos">
-        <div>
-          <h2>Cocktail Recipe Book</h2>
-              <button type="button" class="create-btn" data-toggle="modal"  data-target="#cocktail-modal">
-                <i class="fas fa-plus-circle"></i>
-              </button>
-          <p>Rails APP using CRUD and 3rd party APIs to update Cocktail Recipe</p>
-        </div>
-      </div>
-    </div>
+    <%= render 'fauxtographyCard' %>
+    <%= render 'cocktailCard' %>
+    <%= render 'giphyCard' %>
+    <%= render 'tsunamiCard' %>
+    <%= render 'apartmentCard' %>
+    <%= render 'chatCard' %>
 
-    <div class="card">
-      <a href="https://ryanmansfield.github.io/react-gifs/" target="blank">
-        <%= image_tag("giphy-react.png", :alt => "giphy-react") %>
-      </a>
-      <div class="card-infos">
-        <div>
-          <h2>Giphy Search</h2>
-              <button type="button" class="create-btn" data-toggle="modal"  data-target="#giphy-modal">
-                <i class="fas fa-plus-circle"></i>
-              </button>
-          <p>React APP integrating GIPHY API to search and display results</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="card">
-      <a href="https://tsunami-music.herokuapp.com/" target="blank">
-        <%= image_tag("tsunami.png", :alt => "tsunami") %>
-      </a>
-      <div class="card-infos">
-        <div>
-          <h2>Tsunami</h2>
-              <button type="button" class="create-btn" data-toggle="modal"  data-target="#tsunami-modal">
-                <i class="fas fa-plus-circle"></i>
-              </button>
-          <p>Responsive website design using jQuery and Bootstrap</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="card">
-      <a href="https://ryanmansfield.github.io/react-flats/" target="blank">
-        <%= image_tag("react-flats.png", :alt => "react-flats") %>
-      </a>
-      <div class="card-infos">
-        <div>
-          <h2>Apartment Selector</h2>
-              <button type="button" class="create-btn" data-toggle="modal"  data-target="#apartment-modal">
-                <i class="fas fa-plus-circle"></i>
-              </button>
-          <p>React APP for selecting an apartment and displaying its location on the map</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="card">
-      <a href=" https://chat-rails-redux.herokuapp.com" target="blank">
-        <%= image_tag("redux-chat.png", :alt => "redux-chat") %>
-      </a>
-      <div class="card-infos">
-        <div>
-          <h2>Multi Channel Messaging APP</h2>
-              <button type="button" class="create-btn" data-toggle="modal"  data-target="#chat-modal">
-                <i class="fas fa-plus-circle"></i>
-              </button>
-          <p>Rails with React/Redux Messaging APP</p>
-        </div>
-      </div>
-    </div>
+
+
+
+
+
 
   </div>
 </div>
@@ -160,7 +74,6 @@
 
 <%= render 'apartmentModal' %>
 <%= render 'chatModal' %>
-<%= render 'cinemakersModal' %>
 <%= render 'cocktailModal' %>
 <%= render 'fauxtographyModal' %>
 <%= render 'giphyModal' %>
