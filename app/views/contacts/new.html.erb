@@ -55,11 +55,11 @@
       <div class="card-infos">
         <div>
           <h2>Night Roulette</h2>
+             <button type="button" class="create-btn" data-toggle="modal"  data-target="#night-roulette-modal">
+                <i class="fas fa-plus-circle"></i>
+              </button>
           <p>Rails App designed and developed in a team and pushed to production using JavaScript, HTML, CSS</p>
         </div>
-         <button type="button" class="create-btn" data-toggle="modal"  data-target="#project-create-modal">
-            <i class="fas fa-plus-circle"></i>
-          </button>
       </div>
     </div>
 
@@ -70,6 +70,9 @@
       <div class="card-infos">
         <div>
           <h2>Fauxtography Marketplace</h2>
+              <button type="button" class="create-btn" data-toggle="modal"  data-target="#fauxtography-modal">
+                <i class="fas fa-plus-circle"></i>
+              </button>
           <p>Rails APP built in a team during 1 week sprint using JavaScript, HTML, CSS</p>
         </div>
       </div>
@@ -82,6 +85,9 @@
       <div class="card-infos">
         <div>
           <h2>Cocktail Recipe Book</h2>
+              <button type="button" class="create-btn" data-toggle="modal"  data-target="#cocktail-modal">
+                <i class="fas fa-plus-circle"></i>
+              </button>
           <p>Rails APP using CRUD and 3rd party APIs to update Cocktail Recipe</p>
         </div>
       </div>
@@ -94,6 +100,9 @@
       <div class="card-infos">
         <div>
           <h2>Giphy Search</h2>
+              <button type="button" class="create-btn" data-toggle="modal"  data-target="#giphy-modal">
+                <i class="fas fa-plus-circle"></i>
+              </button>
           <p>React APP integrating GIPHY API to search and display results</p>
         </div>
       </div>
@@ -106,6 +115,9 @@
       <div class="card-infos">
         <div>
           <h2>Tsunami</h2>
+              <button type="button" class="create-btn" data-toggle="modal"  data-target="#tsunami-modal">
+                <i class="fas fa-plus-circle"></i>
+              </button>
           <p>Responsive website design using jQuery and Bootstrap</p>
         </div>
       </div>
@@ -118,6 +130,9 @@
       <div class="card-infos">
         <div>
           <h2>Apartment Selector</h2>
+              <button type="button" class="create-btn" data-toggle="modal"  data-target="#apartment-modal">
+                <i class="fas fa-plus-circle"></i>
+              </button>
           <p>React APP for selecting an apartment and displaying its location on the map</p>
         </div>
       </div>
@@ -130,6 +145,9 @@
       <div class="card-infos">
         <div>
           <h2>Multi Channel Messaging APP</h2>
+              <button type="button" class="create-btn" data-toggle="modal"  data-target="#chat-modal">
+                <i class="fas fa-plus-circle"></i>
+              </button>
           <p>Rails with React/Redux Messaging APP</p>
         </div>
       </div>
@@ -139,14 +157,19 @@
 </div>
 
 <!-- MODALS -->
-<div class="modal fade" id="project-create-modal" tabindex="-1" role="dialog" aria-labelledby="project-create-modal" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <h1>test</h1>
 
-    </div>
-  </div>
-</div>
+<%= render 'apartmentModal' %>
+<%= render 'chatModal' %>
+<%= render 'cinemakersModal' %>
+<%= render 'cocktailModal' %>
+<%= render 'fauxtographyModal' %>
+<%= render 'giphyModal' %>
+<%= render 'nightRouletteModal' %>
+<%= render 'tsunamiModal' %>
+
+
+
+
 
       <!-- Contact Form -->
 
