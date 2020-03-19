@@ -4,15 +4,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
-  background: white;
+  background: $gray;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  color: black;
 }
 
 .card > img {
-  height: 200px;
+  padding: 16px;
+  height: initial;
   width: 100%;
-  object-fit: cover;
+
 }
 
 .card-info {
@@ -40,8 +40,6 @@
 // }
 
 
-.card .card-infos {
-}
 
 // // Smallest device
 // @media (min-width: 100px) and (max-width: 575px) {
