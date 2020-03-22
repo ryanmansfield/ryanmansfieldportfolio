@@ -1,8 +1,8 @@
 <div class="modal fade" id="night-roulette-modal" tabindex="-1" role="dialog" aria-labelledby="night-roulette-modal" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-container">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
       <div class="carousel-container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -15,28 +15,28 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="caousel-image">
-                <%= image_tag("nr-form.png", :class => "d-block w-100", :alt => "First slide") %>
+              <div class="carousel-image">
+                <%= image_tag("nr-form.png", :class => "d-block carousel-image", :alt => "First slide") %>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="caousel-image">
-                <%= image_tag("nr-order.png", :class => "d-block w-100", :alt => "Second slide") %>
+              <div class="carousel-image">
+                <%= image_tag("nr-order.png", :class => "d-block carousel-image", :alt => "Second slide") %>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="caousel-image">
-                <%= image_tag("nr-driver.png", :class => "d-block w-100", :alt => "Third slide") %>
+              <div class="carousel-image">
+                <%= image_tag("nr-driver.png", :class => "d-block carousel-image", :alt => "Third slide") %>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="caousel-image">
-                <%= image_tag("nr-share.png", :class => "d-block w-100", :alt => "Fourth slide") %>
+              <div class="carousel-image">
+                <%= image_tag("nr-share.png", :class => "d-block carousel-image", :alt => "Fourth slide") %>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="caousel-image">
-                <%= image_tag("nr-arrive.png", :class => "d-block w-100", :alt => "Fifth slide") %>
+              <div class="carousel-image">
+                <%= image_tag("nr-arrive.png", :class => "d-block carousel-image", :alt => "Fifth slide") %>
               </div>
             </div>
 
@@ -50,14 +50,17 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-
+      </div>
+      <div class="modal-info">
+        <h3>What I did</h3>
+        <p><i>  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</i></p>
+        <h3>What I learned</h3>
+        <p><i>  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</i></p>
 
       </div>
-      <p>Rails App designed and developed in a team and pushed to production using JavaScript, HTML, CSS</p>
-      <a href="https://github.com/ryanmansfield/night_roulette" target="_blank" class="btn btn-flat" class="btn btn-flat">View Code</a>
-
-
-
+      <div class="modal-actions">
+        <a href="https://github.com/ryanmansfield/night_roulette" target="_blank" class="btn btn-flat" class="btn btn-flat">View Code </a>
+      </div>
     </div>
   </div>
 </div>

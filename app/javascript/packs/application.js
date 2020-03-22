@@ -4,5 +4,3 @@ $ (function () {
   AOS.init ();
 });
 
-
-$('.carousel').carousel();
