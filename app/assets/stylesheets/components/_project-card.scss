@@ -1,11 +1,14 @@
 .card {
-  margin: 16px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
   height: 400px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
   background: $gray;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 80vw;
 }
 
 .card > img {
