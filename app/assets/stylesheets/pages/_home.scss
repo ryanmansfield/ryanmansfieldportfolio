@@ -50,6 +50,37 @@ h4 {
 }
 
 
-/*Card*/
+/*Contact*/
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 32px;
+  margin-top: 60px;
+}
+
+.email-icon {
+  border: none;
+  color: #2E6171;
+  background-color: $gray;
+}
+
+.social-links {
+    color: #2E6171;
+  background-color: $gray;
+}
+
+.contact-form-container {
+  width: 40vw;
+  height: 70vh;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.contact-info {
+  height: 70vh;
+    margin-bottom: auto;
+  margin-top: auto;
+}
 
 
