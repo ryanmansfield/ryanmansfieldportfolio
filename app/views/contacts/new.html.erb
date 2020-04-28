@@ -1,12 +1,12 @@
-<div align="center">
-  <h3>Send A message to Us</h3>
+<div class="contact-form">
+  <h3>Send me a message</h3>
 
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
     <%= f.input :name, :required => true %>
     <%= f.input :email, :required => true %>
     <%= f.input :message, :as => :text, :required => true %>
     <div class= "hidden">
-      <%= f.input :nickname, :as => :hidden,  :hint => 'Leave this field blank!' %>
+      <%= f.input :nickname, :as => :hidden %>
     </div>
     <div>
       </br>

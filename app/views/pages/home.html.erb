@@ -4,15 +4,14 @@
   <div class="nav-links">
     <a class="nav-link" href="#bio">About</a>
     <a class="nav-link" href="#portfolio">Portfolio</a>
+    <a class="nav-link" href="#contact">Contact</a>
     <%= link_to "Resume", asset_path('ryanmansfield-cv.pdf'), target: "blank", class: "nav-link" %>
 
   </div>
   <div class="container">
     <h1>Ryan Mansfield</h1>
     <p>Full Stack Web Developer</p>
-    <form action="mailto:ryanmansfield86@gmail.com" method="GET" target="_blank">
-      <input type="submit" value="Email Me" class="btn btn-flat">
-    </form>
+    <a class="btn btn-flat" href="#contact">Email Me</a>
   </div>
 </div>
 
@@ -53,11 +52,46 @@
     <%= render 'fauxtographyCard' %>
     <%= render 'cocktailCard' %>
     <%= render 'giphyCard' %>
-    <%= render 'tsunamiCard' %>
     <%= render 'apartmentCard' %>
     <%= render 'chatCard' %>
   </div>
 </div>
+
+<!-- Contact Section -->
+<div class="contact" id="contact">
+  <div class="contact-form-container">
+
+    <%= render template:'contacts/new' %>
+  </div>
+  <div class="contact-info">
+
+    <form action="mailto:ryanmansfield86@gmail.com" method="GET" target="_blank">
+      <button type="submit" class="email-icon"> <i class="fas fa-envelope-open-text"></i></button>
+    </form>
+     <h6>Email</h6>
+    <p>ryan@ryan.io</p>
+
+    <a href="https://www.linkedin.com/in/ryan-mansfield86/" target="_blank" class="social-links">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <h6>LinkedIn</h6>
+    <p>https://www.linkedin.com/in/ryan-mansfield86/</p>
+
+    <a href="https://github.com/ryanmansfield" target="_blank" class="social-links">
+      <i class="fab fa-github-square"></i>
+    </a>
+     <h6>LinkedIn</h6>
+    <p>https://www.linkedin.com/in/ryan-mansfield86/</p>
+
+    <a href="https://facebook.com/Mansfield.Ryan" target="_blank" class="social-links">
+      <i class="fab fa-facebook-square"></i>
+    </a>
+     <h6>LinkedIn</h6>
+    <p>https://www.linkedin.com/in/ryan-mansfield86/</p>
+
+  </div>
+</div>
+
 
 <!-- MODALS -->
 
@@ -67,24 +101,12 @@
 <%= render 'fauxtographyModal' %>
 <%= render 'giphyModal' %>
 <%= render 'nightRouletteModal' %>
-<%= render 'tsunamiModal' %>
 
-<div class="contact">
-  <%= render template:'contacts/new' %>
-</div>
+
 
 <!-- Footer Section -->
 <div class="footer">
   <div class="footer-links">
-    <a href="https://www.linkedin.com/in/ryan-mansfield-a4753b18/" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/ryanmansfield" target="_blank">
-      <i class="fab fa-github-square"></i>
-    </a>
-    <a href="https://facebook.com/Mansfield.Ryan" target="_blank">
-      <i class="fab fa-facebook-square"></i>
-    </a>
 
   </div>
   <div class="footer-copyright">
