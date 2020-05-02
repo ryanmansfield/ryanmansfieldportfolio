@@ -52,7 +52,7 @@ h4 {
 
 /*Contact*/
 
-.contact {
+.contact-section {
   display: flex;
   justify-content: space-around;
   padding: 32px;
@@ -63,6 +63,10 @@ h4 {
   border: none;
   color: #2E6171;
   background-color: $gray;
+}
+
+.contact-type {
+  display: flex;
 }
 
 .social-links {
@@ -77,10 +81,10 @@ h4 {
   margin-top: auto;
 }
 
-.contact-info {
-  height: 70vh;
-    margin-bottom: auto;
-  margin-top: auto;
+
+
+.contacts {
+  margin-top: 96px;
 }
 
 
