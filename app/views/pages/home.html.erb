@@ -4,7 +4,7 @@
   <div class="nav-links">
     <a class="nav-link"  id="nav-link" href="#bio">About</a>
     <a class="nav-link"  id="nav-link" href="#portfolio">Portfolio</a>
-    <a class="nav-link"  id="nav-link" href="#contact">Contact</a>
+    <a class="nav-link"  id="nav-link" href="#contact_form">Contact</a>
     <%= link_to "Resume", asset_path('ryanmansfield-cv.pdf'), target: "blank", class: "nav-link", id: "nav-link"%>
 
   </div>
@@ -12,7 +12,7 @@
     <h1>Ryan Mansfield</h1>
     <p>Full Stack Web Developer</p>
 
-    <a class="btn btn-flat" id="contact"  href="#contact">Email Me</a>
+    <a class="btn btn-flat" id="contact"  href="#contact_form">Email Me</a>
   </div>
 </div>
 
@@ -58,7 +58,7 @@
 </div>
 
 <!-- Contact Section -->
-<div class="contact-section" id="contact">
+<div class="contact-section" id="contact_form">
   <div class="contact-form-container">
 
     <%= render template:'contacts/new' %>
